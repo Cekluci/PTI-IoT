@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      fetch("http://192.168.1.142:5000/realtime")
+      fetch("http://XXX.XXX.X.XXX:5000/realtime")
         .then((response) => response.json())
         .then((sensorData) => {
           if (!sensorData.error) {
